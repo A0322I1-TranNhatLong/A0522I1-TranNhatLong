@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Do you love me?</title>
 </head>
 <body>
-$END$
+    <h1 style="position: absolute; left: 220px; top: 175px;">Do You Love Me</h1>
+    <input type="button" value="Yes" onclick="display()" style="position: absolute; top: 235px; left: 285px">
+    <input type="button" value="No" id="jump" onmouseover="jump()" style="position: absolute; top: 235px; left: 360px"></div>
+<script>
+    function display() {
+        alert("I love you too <3 ");
+    }
+    function jump() {
+        let btnJump = document.getElementById("jump");
+        let x = Math.random() * window.innerWidth;
+        let y = Math.random() * window.innerHeight;
+        btnJump.style.left = x + "px";
+        btnJump.style.top = y +"px";
+    }
+</script>
 </body>
 </html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<input type="button" value="Bài 1" onclick="bai1()"> Vẽ hình chữ nhật rỗng chiều dài n và chiều rộng m <br><br>
+<input type="button" value="Bài 2" onclick="bai2()"> Vẽ tam giác vuông cân rỗng có chiều cao h <br><br>
+<input type="button" value="Bài 3" onclick="bai3()"> Vẽ tam giác cân đặc có chiều cao h <br><br>
+<input type="button" value="Bài 4" onclick="bai4()"> Vẽ tam giác cân rỗng có chiều cao h <br><br>
+<script>
+    //bài 1
+    function bai1(){
+        let m = parseInt(prompt("Nhập chiều rộng: "));
+        let n = parseInt(prompt("Nhập chiều dài: "));
+        let a = " ";
+        for (let i=0;i<=m;i++) {
+            for (let j = 0; j <= n; j++) {
+                if (i == 0 || i == m) {
+                    document.write("<a style='color: black'>*</a>");
+                }else if (j == 0 || j == n) {
+                    document.write("<a style='color: black'>*</a>");
+                }else {
+                    document.write("<a style='color: white'>*</a>");
+                }
+
+            }
+            document.write("<br>");
+        }
+    }
+</script>
+</body>
+</html>
